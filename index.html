@@ -43,7 +43,7 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
-    body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #f5f5f5; overflow-x: hidden; }
+    body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #f5f5f5; overflow-x: hidden; -webkit-text-size-adjust: 100%; }
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; display: block; }
     button { font-family: inherit; cursor: pointer; border: none; background: none; }
@@ -80,9 +80,9 @@
     .nav-logo {
       display: flex; align-items: center; cursor: pointer;
       background: #fff; border-radius: 8px;
-      padding: 6px 12px;
+      padding: 6px 12px; max-width: 180px;
     }
-    .nav-logo img { height: 44px; width: auto; display: block; }
+    .nav-logo img { height: 44px; width: auto; display: block; max-width: 140px; }
 
     .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
     .nav-links a {
@@ -217,7 +217,7 @@
 
     /* ═══════ SECTIONS ═══════ */
     .section { padding: 100px 32px; }
-    .section-inner { max-width: 1300px; margin: 0 auto; }
+    .section-inner { max-width: 1300px; margin: 0 auto; width: 100%; }
     .section-eyebrow {
       font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em;
       text-transform: uppercase; color: var(--bridge-blue-lt); margin-bottom: 14px;
@@ -293,7 +293,7 @@
     }
     .service-category-icon svg { width: 26px; height: 26px; fill: var(--bridge-blue-lt); }
     .service-category-header h3 {
-      font-size: 1.4rem; font-weight: 800; color: #fff; letter-spacing: -0.01em;
+      font-size: 1.2rem; font-weight: 800; color: #fff; letter-spacing: -0.01em;
     }
     .service-category-header p { font-size: 0.9rem; color: var(--gray); margin-top: 4px; }
 
@@ -560,14 +560,27 @@
       .hero-content { padding: 100px 20px 80px; }
       .hero-stats { gap: 28px; }
       .hero-stat-num { font-size: 1.8rem; }
-      .section { padding: 64px 20px; }
-      .section-title { font-size: 2rem; }
+      .hero-btns { flex-direction: column; }
+      .hero-btns a, .hero-btns button { width: 100%; justify-content: center; text-align: center; }
+      .section { padding: 56px 16px; }
+      .section-title { font-size: 1.85rem; }
+      .about-grid { grid-template-columns: 1fr !important; }
       .about-cards { grid-template-columns: 1fr; }
-      .service-items-grid { grid-template-columns: repeat(2, 1fr); }
-      .service-items-grid-3 { grid-template-columns: 1fr; }
-      .all-programs-include { padding: 28px 20px; }
+      .about-img { min-height: 260px; }
+      .service-category-header { flex-wrap: wrap; }
+      .service-items-grid { grid-template-columns: 1fr !important; }
+      .service-items-grid-3 { grid-template-columns: 1fr !important; }
+      .all-programs-include { padding: 28px 16px; }
       .include-grid { grid-template-columns: 1fr; }
+      .programs-grid { grid-template-columns: 1fr !important; }
+      .mechanic-grid { grid-template-columns: 1fr !important; }
+      .mechanic-stats { grid-template-columns: 1fr 1fr; }
+      .location-grid { grid-template-columns: 1fr !important; }
+      .location-map { height: 280px !important; }
+      .location-map iframe { height: 280px !important; }
       .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr !important; }
+      .contact-grid { grid-template-columns: 1fr !important; }
       .form-row { grid-template-columns: 1fr; }
       .footer-top { grid-template-columns: 1fr; }
       .footer-bottom { flex-direction: column; text-align: center; }
@@ -577,7 +590,15 @@
     @media (max-width: 480px) {
       .team-grid { grid-template-columns: 1fr; }
       .service-items-grid { grid-template-columns: 1fr; }
-      .mechanic-stats { grid-template-columns: 1fr; }
+      .mechanic-stats { grid-template-columns: 1fr 1fr; }
+      .hero h1 { font-size: 2rem; }
+      .section-title { font-size: 1.65rem; }
+      .hero-badge { font-size: 0.72rem; padding: 6px 14px; }
+      .btn-primary, .btn-secondary { padding: 14px 20px; font-size: 0.9rem; }
+      .service-item span { font-size: 0.85rem; }
+      .program-card { padding: 24px 18px; }
+      .contact-form { padding: 24px 16px; }
+      .footer { padding: 48px 16px 24px; }
     }
   </style>
 </head>
@@ -752,7 +773,7 @@
             <p>24 hours a day &nbsp;|&nbsp; 7 days a week &nbsp;|&nbsp; 365 days a year</p>
           </div>
         </div>
-        <div class="service-items-grid" style="grid-template-columns: repeat(3,1fr);">
+        <div class="service-items-grid">
           <div class="service-item"><div class="service-item-check"></div><span>On-site emergency tire service</span></div>
           <div class="service-item"><div class="service-item-check"></div><span>Available 24 hours a day</span></div>
           <div class="service-item"><div class="service-item-check"></div><span>7 days a week, every day of the year</span></div>
@@ -770,7 +791,7 @@
             <p>Annual, semi-annual, and quarterly inspection programs</p>
           </div>
         </div>
-        <div class="service-items-grid" style="grid-template-columns: repeat(3,1fr);">
+        <div class="service-items-grid">
           <div class="service-item"><div class="service-item-check"></div><span>Annual Inspections</span></div>
           <div class="service-item"><div class="service-item-check"></div><span>Semi-Annual Inspections</span></div>
           <div class="service-item"><div class="service-item-check"></div><span>Quarterly Inspections</span></div>
@@ -841,7 +862,7 @@
       </div>
 
       <!-- Program Cards -->
-      <div class="programs-grid" style="grid-template-columns: repeat(3,1fr);">
+      <div class="programs-grid">
 
         <!-- Annual -->
         <div class="program-card">
@@ -1097,7 +1118,7 @@
     <!-- ═══════ MAP / LOCATION ═══════ -->
   <section class="section" id="location" style="background: var(--black2); padding-top: 0;">
     <div class="section-inner">
-      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; padding-top: 80px;">
+      <div class="location-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; padding-top: 80px;">
         <div>
           <div class="section-eyebrow">Find Us</div>
           <h2 class="section-title">Our <span>Location</span></h2>
@@ -1130,7 +1151,7 @@
             </a>
           </div>
         </div>
-        <div style="border-radius:12px;overflow:hidden;border:1px solid var(--border);height:420px;">
+        <div class="location-map" style="border-radius:12px;overflow:hidden;border:1px solid var(--border);height:420px;">
           <iframe
             src="https://maps.google.com/maps?q=1370+US-80+E,+Pooler,+GA+31322&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%" height="420" style="border:0;display:block;" allowfullscreen="" loading="lazy"
