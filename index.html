@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bridgeport Tire | 24/7 Emergency Roadside Assistance in Savannah, GA</title>
+  <meta name="description" content="Bridgeport Tire of Savannah — 24/7 emergency roadside assistance, preventative maintenance, and tire services. Over 20 years of experience. Call (912) 373-8717."/>
+  <meta name="keywords" content="roadside assistance Savannah GA, emergency tire service Pooler, 24/7 roadside help, tire repair Savannah, preventative maintenance truck, Bridgeport Tire"/>
+  <meta property="og:title" content="Bridgeport Tire | The Bridge Between You And The Road"/>
+  <meta property="og:description" content="24/7 Emergency Roadside Assistance in Savannah, GA. Over 20 years of experience. Fast, reliable, always there."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://bridgeport-tire.com"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Bridgeport Tire",
+    "description": "24/7 Emergency Roadside Assistance, Preventative Maintenance, and Tire Services in Savannah, GA",
+    "image": "https://bridgeport-tire.com/img/hero-truck.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1370 US Hwy 80 E, Unit M",
+      "addressLocality": "Pooler",
+      "addressRegion": "GA",
+      "postalCode": "31322"
+    },
+    "telephone": "(912) 373-8717",
+    "email": "roadcalls@bridgeport-tire.net",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "areaServed": "Savannah, Pooler, and surrounding areas in Georgia"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #f5f5f5; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    :root {
+      --bridge-blue: #2a79b5;
+      --bridge-blue-lt: #3a8fd0;
+      --bridge-blue-dk: #1d5c8a;
+      --bridge-blue-glow: rgba(42, 121, 181, 0.3);
+      --black: #0a0a0a;
+      --black2: #121212;
+      --black3: #1a1a1a;
+      --black4: #222222;
+      --white: #f5f5f5;
+      --gray: #888;
+      --gray-dk: #444;
+      --border: rgba(42, 121, 181, 0.15);
+      --radius: 4px;
+      --radius-lg: 12px;
+    }
+
+    /* ═══════ NAV ═══════ */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(10,10,10,0.96); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow 0.3s;
+    }
+    .navbar.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+    .nav-inner {
+      max-width: 1300px; margin: 0 auto; padding: 0 32px;
+      height: 80px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+    .nav-logo-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+    }
+    .nav-logo-text {
+      display: flex; flex-direction: column; line-height: 1.1;
+    }
+    .nav-logo-text .name {
+      font-family: 'Russo One', sans-serif; font-size: 1.15rem;
+      letter-spacing: 0.02em; color: var(--white);
+    }
+    .nav-logo-text .name span { color: var(--bridge-blue); }
+    .nav-logo-text .tagline {
+      font-size: 0.62rem; color: var(--gray); letter-spacing: 0.08em;
+      text-transform: uppercase; margin-top: 2px;
+    }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a {
+      font-size: 0.88rem; font-weight: 500; color: #aaa;
+      transition: color 0.2s; cursor: pointer; position: relative;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -6px; left: 0; right: 0;
+      height: 2px; background: var(--bridge-blue);
+      transform: scaleX(0); transition: transform 0.25s;
+    }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .nav-cta {
+      display: flex; align-items: center; gap: 16px;
+    }
+    .nav-social {
+      display: flex; gap: 12px; align-items: center;
+    }
+    .nav-social a {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--black3); display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s; color: #888;
+    }
+    .nav-social a:hover { background: var(--bridge-blue); color: #fff; }
+    .nav-social svg { width: 18px; height: 18px; fill: currentColor; }
+    .nav-call {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--bridge-blue); color: #fff;
+      padding: 10px 22px; border-radius: var(--radius);
+      font-weight: 700; font-size: 0.9rem; letter-spacing: 0.01em;
+      transition: all 0.2s;
+    }
+    .nav-call:hover { background: var(--bridge-blue-lt); transform: translateY(-1px); box-shadow: 0 4px 16px var(--bridge-blue-glow); }
+    .nav-call svg { width: 16px; height: 16px; fill: currentColor; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; }
+    .hamburger span { width: 24px; height: 2px; background: #aaa; border-radius: 2px; transition: 0.3s; }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .mobile-menu {
+      display: none; position: fixed; top: 80px; left: 0; right: 0; z-index: 999;
+      background: rgba(10,10,10,0.98); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 32px; flex-direction: column; gap: 0;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      padding: 16px 0; font-size: 1.05rem; font-weight: 500; color: #ccc;
+      border-bottom: 1px solid rgba(255,255,255,0.06); cursor: pointer;
+    }
+    .mobile-menu a:last-child { border: none; }
+    .mobile-menu .mobile-call {
+      margin-top: 16px; background: var(--bridge-blue); color: #fff;
+      padding: 16px; border-radius: var(--radius); font-weight: 700;
+      text-align: center; font-size: 1.05rem;
+    }
+
+    /* ═══════ HERO ═══════ */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.7) 50%, rgba(10,10,10,0.5) 100%),
+                  url('img/hero-truck.jpg');
+      background-size: cover; background-position: center;
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(10,10,10,0.4) 0%, transparent 30%, transparent 70%, rgba(10,10,10,0.8) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2; max-width: 1300px; margin: 0 auto;
+      padding: 120px 32px 100px; width: 100%;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(42,121,181,0.15); border: 1px solid var(--bridge-blue);
+      padding: 8px 20px; border-radius: 50px;
+      font-size: 0.82rem; font-weight: 600; color: var(--bridge-blue-lt);
+      margin-bottom: 32px; letter-spacing: 0.04em;
+    }
+    .hero-badge .pulse {
+      width: 8px; height: 8px; border-radius: 50%; background: #22a06b;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(34,160,107,0.6); }
+      50% { box-shadow: 0 0 0 8px rgba(34,160,107,0); }
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5.5rem); font-weight: 900;
+      line-height: 1.02; color: #fff; margin-bottom: 24px;
+      letter-spacing: -0.02em; max-width: 850px;
+    }
+    .hero h1 span { color: var(--bridge-blue-lt); }
+    .hero-sub {
+      font-size: 1.15rem; color: #ccc; margin-bottom: 40px;
+      max-width: 560px; line-height: 1.75; font-weight: 400;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
+    .btn-primary {
+      background: var(--bridge-blue); color: #fff;
+      padding: 16px 36px; border-radius: var(--radius);
+      font-weight: 700; font-size: 1rem; letter-spacing: 0.01em;
+      display: inline-flex; align-items: center; gap: 10px;
+      transition: all 0.25s; cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--bridge-blue-lt); transform: translateY(-2px); box-shadow: 0 8px 24px var(--bridge-blue-glow); }
+    .btn-primary svg { width: 18px; height: 18px; fill: currentColor; }
+    .btn-secondary {
+      background: rgba(255,255,255,0.08); color: #fff;
+      padding: 15px 36px; border-radius: var(--radius);
+      font-weight: 600; font-size: 1rem;
+      border: 1.5px solid rgba(255,255,255,0.15);
+      display: inline-flex; align-items: center; gap: 8px;
+      transition: all 0.25s; cursor: pointer; backdrop-filter: blur(4px);
+    }
+    .btn-secondary:hover { border-color: var(--bridge-blue); color: var(--bridge-blue-lt); background: rgba(42,121,181,0.08); }
+    .hero-stats { display: flex; gap: 48px; flex-wrap: wrap; }
+    .hero-stat { display: flex; flex-direction: column; }
+    .hero-stat-num { font-size: 2.4rem; font-weight: 900; color: var(--bridge-blue-lt); line-height: 1; }
+    .hero-stat-label { font-size: 0.8rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; }
+
+    /* ═══════ MARQUEE ═══════ */
+    .marquee {
+      background: var(--bridge-blue); overflow: hidden;
+      padding: 14px 0; white-space: nowrap;
+    }
+    .marquee-track {
+      display: inline-block; animation: scroll 25s linear infinite;
+    }
+    .marquee-track span {
+      font-size: 0.95rem; font-weight: 700; letter-spacing: 0.08em;
+      color: #fff; margin: 0 20px; text-transform: uppercase;
+    }
+    .marquee-track span::after {
+      content: '●'; color: rgba(255,255,255,0.4); margin-left: 40px;
+    }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ═══════ SECTIONS ═══════ */
+    .section { padding: 100px 32px; }
+    .section-inner { max-width: 1300px; margin: 0 auto; }
+    .section-eyebrow {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--bridge-blue-lt); margin-bottom: 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .section-eyebrow::before { content: ''; width: 24px; height: 2px; background: var(--bridge-blue); }
+    .section-title {
+      font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800;
+      color: #fff; margin-bottom: 16px; letter-spacing: -0.02em; line-height: 1.1;
+    }
+    .section-title span { color: var(--bridge-blue-lt); }
+    .section-sub {
+      font-size: 1.05rem; color: var(--gray); line-height: 1.75;
+      max-width: 580px; margin-bottom: 56px;
+    }
+    .section-center { text-align: center; }
+    .section-center .section-eyebrow { justify-content: center; }
+    .section-center .section-eyebrow::after { content: ''; width: 24px; height: 2px; background: var(--bridge-blue); }
+    .section-center .section-sub { margin-left: auto; margin-right: auto; }
+
+    /* ═══════ ABOUT / WHY CHOOSE US ═══════ */
+    .about { background: var(--black); }
+    .about-grid {
+      display: grid; grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: center;
+    }
+    .about-text .founder-quote {
+      border-left: 3px solid var(--bridge-blue);
+      padding-left: 24px; margin: 32px 0;
+      font-style: italic; font-size: 1.05rem; color: #ddd; line-height: 1.7;
+    }
+    .about-text .founder-name {
+      font-size: 0.85rem; font-weight: 600; color: var(--bridge-blue-lt);
+      text-transform: uppercase; letter-spacing: 0.08em; margin-top: 8px;
+    }
+    .about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 40px; }
+    .about-card {
+      background: var(--black2); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 28px 24px;
+      transition: all 0.3s;
+    }
+    .about-card:hover { border-color: var(--bridge-blue); transform: translateY(-4px); }
+    .about-card-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: rgba(42,121,181,0.12); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+    }
+    .about-card-icon svg { width: 22px; height: 22px; fill: var(--bridge-blue-lt); }
+    .about-card h4 { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .about-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
+
+    .about-img {
+      position: relative; border-radius: var(--radius-lg); overflow: hidden;
+    }
+    .about-img img { width: 100%; height: 100%; object-fit: cover; }
+    .about-img-overlay {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(10,10,10,0.9));
+      padding: 32px 24px 24px;
+    }
+    .about-img-overlay .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--bridge-blue); color: #fff;
+      padding: 8px 16px; border-radius: 50px;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    /* ═══════ SERVICES ═══════ */
+    .services { background: var(--black2); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .service-card {
+      background: var(--black3); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 36px 28px;
+      transition: all 0.3s; position: relative; overflow: hidden;
+    }
+    .service-card:hover { border-color: var(--bridge-blue); transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
+    .service-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--bridge-blue); transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-card-popular {
+      border-color: var(--bridge-blue);
+    }
+    .service-card-popular .popular-badge {
+      position: absolute; top: 16px; right: 16px;
+      background: var(--bridge-blue); color: #fff;
+      padding: 4px 12px; border-radius: 50px;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .service-icon {
+      width: 56px; height: 56px; border-radius: 12px;
+      background: rgba(42,121,181,0.12); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 24px;
+    }
+    .service-icon svg { width: 28px; height: 28px; fill: var(--bridge-blue-lt); }
+    .service-card h3 { font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .service-card .tier {
+      font-size: 0.72rem; font-weight: 600; color: var(--bridge-blue-lt);
+      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;
+    }
+    .service-card p { font-size: 0.9rem; color: var(--gray); line-height: 1.7; margin-bottom: 20px; }
+    .service-features { list-style: none; }
+    .service-features li {
+      font-size: 0.85rem; color: #bbb; padding: 6px 0;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .service-features li::before {
+      content: ''; width: 16px; height: 16px; border-radius: 50%;
+      background: rgba(42,121,181,0.15); flex-shrink: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232a79b5'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+      background-size: 12px; background-position: center; background-repeat: no-repeat;
+    }
+
+    /* ═══════ TESTIMONIALS ═══════ */
+    .testimonials { background: var(--black); }
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--black2); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 32px 28px;
+      transition: all 0.3s;
+    }
+    .testimonial-card:hover { border-color: var(--bridge-blue); transform: translateY(-4px); }
+    .testimonial-stars { color: #f5a623; font-size: 1.1rem; letter-spacing: 4px; margin-bottom: 16px; }
+    .testimonial-text { font-size: 0.98rem; color: #ddd; line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+    .testimonial-author { font-size: 0.82rem; color: var(--gray); font-weight: 600; }
+
+    /* ═══════ TEAM ═══════ */
+    .team { background: var(--black2); }
+    .team-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    }
+    .team-card {
+      background: var(--black3); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 28px 20px; text-align: center;
+      transition: all 0.3s;
+    }
+    .team-card:hover { border-color: var(--bridge-blue); transform: translateY(-4px); }
+    .team-avatar {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: rgba(42,121,181,0.12); margin: 0 auto 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; font-weight: 800; color: var(--bridge-blue-lt);
+    }
+    .team-card h4 { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .team-card .role { font-size: 0.72rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+
+    /* ═══════ GALLERY ═══════ */
+    .gallery { background: var(--black); }
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    }
+    .gallery-item {
+      border-radius: var(--radius-lg); overflow: hidden; cursor: pointer;
+      aspect-ratio: 4/3; position: relative;
+      border: 1px solid var(--border); transition: all 0.3s;
+    }
+    .gallery-item:hover { border-color: var(--bridge-blue); transform: scale(1.02); }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+    .gallery-item.tall { aspect-ratio: 3/4; grid-row: span 2; }
+    .gallery-item.wide { aspect-ratio: 16/9; grid-column: span 2; }
+
+    /* ═══════ CONTACT / VISIT ═══════ */
+    .contact { background: var(--black2); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 28px; }
+    .contact-item {
+      display: flex; gap: 20px; align-items: flex-start;
+    }
+    .contact-item-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: rgba(42,121,181,0.12); display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-item-icon svg { width: 22px; height: 22px; fill: var(--bridge-blue-lt); }
+    .contact-item h4 { font-size: 0.78rem; font-weight: 700; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+    .contact-item p { font-size: 1.05rem; color: #fff; font-weight: 500; line-height: 1.5; }
+    .contact-item p a { color: var(--bridge-blue-lt); transition: color 0.2s; }
+    .contact-item p a:hover { color: var(--bridge-blue-lt); text-decoration: underline; }
+    .contact-hours-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(34,160,107,0.12); border: 1px solid rgba(34,160,107,0.3);
+      padding: 6px 14px; border-radius: 50px;
+      font-size: 0.78rem; font-weight: 600; color: #22a06b; margin-top: 8px;
+    }
+    .contact-hours-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: #22a06b; animation: pulse 2s infinite; }
+
+    .contact-form {
+      background: var(--black3); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 36px 32px;
+    }
+    .contact-form h3 { font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .contact-form p { font-size: 0.9rem; color: var(--gray); margin-bottom: 28px; line-height: 1.6; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--gray); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 14px 16px; border-radius: var(--radius);
+      background: var(--black2); border: 1px solid rgba(255,255,255,0.08);
+      color: #fff; font-family: inherit; font-size: 0.95rem; transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none; border-color: var(--bridge-blue);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-submit {
+      width: 100%; background: var(--bridge-blue); color: #fff;
+      padding: 16px; border-radius: var(--radius);
+      font-weight: 700; font-size: 1rem; cursor: pointer;
+      transition: all 0.2s; margin-top: 8px;
+    }
+    .form-submit:hover { background: var(--bridge-blue-lt); }
+
+    /* ═══════ MOBILE CALL BAR ═══════ */
+    .mobile-call-bar {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 1001;
+      background: var(--bridge-blue); padding: 14px 20px;
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    .mobile-call-bar a {
+      color: #fff; font-weight: 800; font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+    .mobile-call-bar svg { width: 20px; height: 20px; fill: currentColor; }
+
+    /* ═══════ FOOTER ═══════ */
+    .footer {
+      background: var(--black); border-top: 1px solid var(--border);
+      padding: 60px 32px 32px;
+    }
+    .footer-inner { max-width: 1300px; margin: 0 auto; }
+    .footer-top {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px;
+    }
+    .footer-brand .nav-logo-text .name { font-size: 1.2rem; }
+    .footer-brand p { font-size: 0.88rem; color: var(--gray); line-height: 1.6; margin-top: 16px; max-width: 300px; }
+    .footer-col h5 { font-size: 0.78rem; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+    .footer-col a { display: block; font-size: 0.88rem; color: var(--gray); padding: 5px 0; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--bridge-blue-lt); }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.06);
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--gray-dk); }
+    .footer-bottom .footer-legal { display: flex; gap: 24px; }
+    .footer-bottom .footer-legal a { font-size: 0.8rem; color: var(--gray-dk); transition: color 0.2s; }
+    .footer-bottom .footer-legal a:hover { color: var(--bridge-blue-lt); }
+
+    /* ═══════ RESPONSIVE ═══════ */
+    @media (max-width: 1024px) {
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .team-grid { grid-template-columns: repeat(3, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-social, .nav-call { display: none; }
+      .hamburger { display: flex; }
+      .nav-inner { padding: 0 20px; height: 64px; }
+      .mobile-menu { top: 64px; }
+      .hero-content { padding: 100px 20px 80px; }
+      .hero-stats { gap: 28px; }
+      .hero-stat-num { font-size: 1.8rem; }
+      .section { padding: 64px 20px; }
+      .section-title { font-size: 2rem; }
+      .about-cards { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item.wide { grid-column: span 2; }
+      .gallery-item.tall { grid-row: span 1; aspect-ratio: 4/3; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .mobile-call-bar { display: block; }
+      body { padding-bottom: 60px; }
+    }
+    @media (max-width: 480px) {
+      .team-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item.wide { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════ NAV ═══════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo" onclick="scrollToSection('hero')">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Bridge icon -->
+            <path d="M10 70 Q50 20 90 70" stroke="#2a79b5" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M10 70 L90 70" stroke="#2a79b5" stroke-width="4" fill="none"/>
+            <line x1="25" y1="42" x2="25" y2="70" stroke="#2a79b5" stroke-width="3"/>
+            <line x1="50" y1="28" x2="50" y2="70" stroke="#2a79b5" stroke-width="3"/>
+            <line x1="75" y1="42" x2="75" y2="70" stroke="#2a79b5" stroke-width="3"/>
+            <rect x="5" y="72" width="90" height="4" rx="2" fill="#2a79b5"/>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="name">BRIDGE<span>PORT</span></span>
+          <span class="tagline">The Bridge Between You And The Road</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a onclick="scrollToSection('about')">About</a></li>
+        <li><a onclick="scrollToSection('services')">Services</a></li>
+        <li><a onclick="scrollToSection('team')">Our Crew</a></li>
+        <li><a onclick="scrollToSection('gallery')">Gallery</a></li>
+        <li><a onclick="scrollToSection('contact')">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <div class="nav-social">
+          <a href="https://www.facebook.com/bridgeporttire" target="_blank" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8v8.44C19.61 23.08 24 18.09 24 12.07z"/></svg>
+          </a>
+          <a href="mailto:roadcalls@bridgeport-tire.net" aria-label="Email">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+        <a href="tel:9123738717" class="nav-call">
+          <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.99-6.83-6.83l1.97-1.57c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.14 10.86 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+          (912) 373-8717
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a onclick="scrollToSection('about')">About</a>
+    <a onclick="scrollToSection('services')">Services</a>
+    <a onclick="scrollToSection('team')">Our Crew</a>
+    <a onclick="scrollToSection('gallery')">Gallery</a>
+    <a onclick="scrollToSection('contact')">Contact</a>
+    <a href="tel:9123738717" class="mobile-call">Call (912) 373-8717</a>
+  </div>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Available 24/7 — Call Now
+      </div>
+      <h1>Stranded on the road? <span>We're on the way.</span></h1>
+      <p class="hero-sub">
+        Bridgeport Tire of Savannah brings over 20 years of experience to every roadside call. Tire and mechanical chassis service, preventative maintenance, and 24/7 emergency assistance — so you're never left stranded.
+      </p>
+      <div class="hero-btns">
+        <a href="tel:9123738717" class="btn-primary">
+          <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.99-6.83-6.83l1.97-1.57c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.14 10.86 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+          Call (912) 373-8717
+        </a>
+        <a onclick="scrollToSection('services')" class="btn-secondary">
+          View Services
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">20+</span>
+          <span class="hero-stat-label">Years Experience</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">24/7</span>
+          <span class="hero-stat-label">Roadside Assistance</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">9</span>
+          <span class="hero-stat-label">Team Members</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ MARQUEE ═══════ -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>24/7 Roadside</span>
+      <span>Preventative Maintenance</span>
+      <span>Tire & Mechanical</span>
+      <span>Emergency Service</span>
+      <span>24/7 Roadside</span>
+      <span>Preventative Maintenance</span>
+      <span>Tire & Mechanical</span>
+      <span>Emergency Service</span>
+    </div>
+  </div>
+
+  <!-- ═══════ ABOUT / WHY CHOOSE US ═══════ -->
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-eyebrow">Why Choose Us</div>
+          <h2 class="section-title">Built on trust, <span>driven by service.</span></h2>
+          <p class="section-sub">
+            At Bridgeport Tire of Savannah, we bring over 20+ years of experience delivering reliable, high-quality service. We offer 24/7 roadside assistance for all tire and mechanical chassis needs — so you're never left stranded.
+          </p>
+          <div class="founder-quote">
+            "At Bridgeport Tire, it is our mission to provide fast and efficient service, as well as help our customers make knowledgeable decisions on proper preventative maintenance practices."
+            <div class="founder-name">— Trey Dorsey, Founder & President</div>
+          </div>
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+              </div>
+              <h4>Fast Response</h4>
+              <p>Stranded on the side of the road? We dispatch quickly to get you moving again.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              </div>
+              <h4>Trusted Expertise</h4>
+              <p>Two decades of tire and chassis experience means we know what your vehicle needs.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
+              <h4>Tailored Service</h4>
+              <p>Every customer is different. We customize our services to meet your specific needs.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              </div>
+              <h4>Always Available</h4>
+              <p>Open 24/7, 365 days a year. Night, day, weekends, holidays — we answer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="img/gallery-2.jpeg" alt="Bridgeport Tire service truck on site" loading="lazy"/>
+          <div class="about-img-overlay">
+            <span class="badge">Serving Savannah & Pooler, GA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SERVICES ═══════ -->
+  <section class="section services" id="services">
+    <div class="section-inner">
+      <div class="section-center" style="margin-bottom: 56px;">
+        <div class="section-eyebrow" style="justify-content: center;">What We Offer</div>
+        <h2 class="section-title">Services that keep you <span>moving forward.</span></h2>
+        <p class="section-sub">
+          Explore our range of services designed to help you move forward with confidence, wherever you're headed next.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Roadside -->
+        <div class="service-card service-card-popular">
+          <span class="popular-badge">Most Called</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <div class="tier">24/7 Emergency</div>
+          <h3>Emergency Roadside Assistance</h3>
+          <p>Tire failures, mechanical breakdowns, and chassis issues — we come to you, day or night, anywhere in the Savannah area.</p>
+          <ul class="service-features">
+            <li>Tire changes & repairs on-site</li>
+            <li>Mechanical chassis service</li>
+            <li>Available 24 hours, 7 days a week</li>
+            <li>Fast dispatch across the region</li>
+          </ul>
+        </div>
+
+        <!-- Beginner Maintenance -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+          </div>
+          <div class="tier">Annual Program</div>
+          <h3>Beginner Maintenance</h3>
+          <p>Annual preventative maintenance programs to keep your fleet running smoothly and catch issues before they become breakdowns.</p>
+          <ul class="service-features">
+            <li>Annual inspection & service</li>
+            <li>Preventative maintenance plan</li>
+            <li>Tire condition assessment</li>
+            <li>Basic chassis check</li>
+          </ul>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <div class="tier">Semi-Annual Program</div>
+          <h3>Intermediate Maintenance</h3>
+          <p>Semi-annual preventative maintenance programs with more frequent check-ins to keep your vehicles in peak condition year-round.</p>
+          <ul class="service-features">
+            <li>Semi-annual inspections</li>
+            <li>Enhanced maintenance schedule</li>
+            <li>Tire rotation & balancing</li>
+            <li>Detailed chassis inspection</li>
+          </ul>
+        </div>
+
+        <!-- Advanced -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-4h2v4zm0-6h-2V7h2v4z"/></svg>
+          </div>
+          <div class="tier">Quarterly Program</div>
+          <h3>Advanced Maintenance</h3>
+          <p>Quarterly preventative maintenance programs for high-use vehicles and fleets that demand the most rigorous care schedule.</p>
+          <ul class="service-features">
+            <li>Quarterly comprehensive inspections</li>
+            <li>Priority service scheduling</li>
+            <li>Full tire & chassis maintenance</li>
+            <li>Custom service packages available</li>
+          </ul>
+        </div>
+
+        <!-- Custom -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+          </div>
+          <div class="tier">Custom Package</div>
+          <h3>Custom Service Packages</h3>
+          <p>Have a specific need? We'll build a custom maintenance and service package tailored to your fleet, schedule, and budget.</p>
+          <ul class="service-features">
+            <li>Personalized service plan</li>
+            <li>Flexible scheduling</li>
+            <li>Fleet-specific solutions</li>
+            <li>Direct dispatcher contact</li>
+          </ul>
+        </div>
+
+        <!-- Tire & Mechanical -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+          </div>
+          <div class="tier">On-Site Service</div>
+          <h3>Tire & Mechanical Chassis</h3>
+          <p>Comprehensive tire services and mechanical chassis repairs handled by our team of certified technicians.</p>
+          <ul class="service-features">
+            <li>Tire sales, mounting & repair</li>
+            <li>Chassis mechanical service</li>
+            <li>On-site or in-shop service</li>
+            <li>All major tire brands</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TESTIMONIALS ═══════ -->
+  <section class="section testimonials">
+    <div class="section-inner">
+      <div class="section-center" style="margin-bottom: 56px;">
+        <div class="section-eyebrow" style="justify-content: center;">Customer Reviews</div>
+        <h2 class="section-title">Don't just take <span>our word for it.</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Bridgeport Tire of Savannah has been a lifesaver — fast, reliable, and always there when you need them, even late at night. You can tell they really care about their customers."</p>
+          <p class="testimonial-author">— Verified Customer</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I've had nothing but great experiences with this team; they're professional, quick to respond, and always tailor their service to what I actually need. Highly recommend them."</p>
+          <p class="testimonial-author">— Verified Customer</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I finally found a company I can trust. Bridgeport Tire of Savannah delivers quality work and dependable service every time."</p>
+          <p class="testimonial-author">— Verified Customer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TEAM ═══════ -->
+  <section class="section team" id="team">
+    <div class="section-inner">
+      <div class="section-center" style="margin-bottom: 56px;">
+        <div class="section-eyebrow" style="justify-content: center;">Meet The Crew</div>
+        <h2 class="section-title">The team behind <span>the bridge.</span></h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">TD</div>
+          <h4>Trey Dorsey</h4>
+          <p class="role">Founder & President</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">DC</div>
+          <h4>Devin Clendenen</h4>
+          <p class="role">General Manager</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">KD</div>
+          <h4>Krista Dorsey</h4>
+          <p class="role">Office Manager</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">JC</div>
+          <h4>Jake Crapps</h4>
+          <p class="role">Chassis Mechanic / Tire Tech</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">JH</div>
+          <h4>James Howard</h4>
+          <p class="role">Chassis Mechanic / Tire Tech</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">WB</div>
+          <h4>Wyatt Bazemore</h4>
+          <p class="role">Chassis Mechanic / Tire Tech</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">LR</div>
+          <h4>Lavar Roberts</h4>
+          <p class="role">Chassis Mechanic / Tire Tech</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">HD</div>
+          <h4>Hannah Dorsey</h4>
+          <p class="role">Dispatcher</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">ST</div>
+          <h4>Shelby Traywick</h4>
+          <p class="role">Dispatcher</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ GALLERY ═══════ -->
+  <section class="section gallery" id="gallery">
+    <div class="section-inner">
+      <div class="section-center" style="margin-bottom: 56px;">
+        <div class="section-eyebrow" style="justify-content: center;">On The Job</div>
+        <h2 class="section-title">Photos from <span>the field.</span></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item wide">
+          <img src="img/gallery-1.jpeg" alt="Bridgeport Tire crew on site" loading="lazy"/>
+        </div>
+        <div class="gallery-item tall">
+          <img src="img/gallery-2.jpeg" alt="Bridgeport Tire service truck" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="img/crew-1.jpg" alt="Bridgeport Tire technician" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="img/crew-2.jpg" alt="Bridgeport Tire team member" loading="lazy"/>
+        </div>
+        <div class="gallery-item wide">
+          <img src="img/hero-truck.jpg" alt="Tire and wheel service" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT ═══════ -->
+  <section class="section contact" id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-eyebrow">Get In Touch</div>
+          <h2 class="section-title">Have a <span>question?</span></h2>
+          <p class="section-sub">Whether you need emergency roadside assistance or want to learn about our maintenance programs, we're here to help — 24/7.</p>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.99-6.83-6.83l1.97-1.57c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.14 10.86 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:9123738717">(912) 373-8717</a></p>
+              <div class="contact-hours-badge"><span class="dot"></span> Open 24/7</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:roadcalls@bridgeport-tire.net">roadcalls@bridgeport-tire.net</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            </div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>1370 US Hwy 80 E, Unit M<br>Pooler, GA 31322</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <p>Open 24/7 — 365 Days a Year</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Request Service</h3>
+          <p>Complete the form with a few details about your inquiry. We'll review your message and get back to you within 48 hours. For emergency roadside assistance, call us directly.</p>
+          <form onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="firstName" required placeholder="John"/>
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="lastName" required placeholder="Smith"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" required placeholder="john@example.com"/>
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" name="phone" required placeholder="(912) 555-0000"/>
+            </div>
+            <div class="form-group">
+              <label>Program Interest</label>
+              <select name="program" required>
+                <option value="">Select a program...</option>
+                <option value="beginner">Beginner — Annual Maintenance</option>
+                <option value="intermediate">Intermediate — Semi-Annual Maintenance</option>
+                <option value="advanced">Advanced — Quarterly Maintenance</option>
+                <option value="custom">Custom Package</option>
+                <option value="roadside">24/7 Roadside Assistance</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Details</label>
+              <textarea name="details" required placeholder="Tell us about your vehicle, fleet, or service needs..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo-text">
+            <span class="name">BRIDGE<span>PORT</span> TIRE</span>
+            <span class="tagline">The Bridge Between You And The Road</span>
+          </div>
+          <p>24/7 Emergency Roadside Assistance, Preventative Maintenance, and Tire Services in Savannah, GA. Over 20 years of trusted service.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <a onclick="scrollToSection('about')">About Us</a>
+          <a onclick="scrollToSection('services')">Services</a>
+          <a onclick="scrollToSection('team')">Our Crew</a>
+          <a onclick="scrollToSection('gallery')">Gallery</a>
+          <a onclick="scrollToSection('contact')">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="tel:9123738717">(912) 373-8717</a>
+          <a href="mailto:roadcalls@bridgeport-tire.net">roadcalls@bridgeport-tire.net</a>
+          <a>1370 US Hwy 80 E, Unit M</a>
+          <a>Pooler, GA 31322</a>
+          <a>Open 24/7</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bridgeport Tire LLC. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a>Privacy Policy</a>
+          <a>Terms of Service</a>
+          <a>Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════ MOBILE CALL BAR ═══════ -->
+  <div class="mobile-call-bar">
+    <a href="tel:9123738717">
+      <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.99-6.83-6.83l1.97-1.57c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.14 10.86 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+      Call (912) 373-8717 — 24/7
+    </a>
+  </div>
+
+  <script>
+    // Scroll to section
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('open');
+    }
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('open');
+    }
+
+    // Navbar shadow on scroll
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 20) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    });
+
+    // Form submit
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      const name = data.get('firstName') + ' ' + data.get('lastName');
+      const email = data.get('email');
+      const phone = data.get('phone');
+      const program = data.get('program');
+      const details = data.get('details');
+      
+      const subject = encodeURIComponent('Service Request from ' + name);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Phone: ' + phone + '\n' +
+        'Program Interest: ' + program + '\n\n' +
+        'Details:\n' + details
+      );
+      
+      window.location.href = 'mailto:roadcalls@bridgeport-tire.net?subject=' + subject + '&body=' + body;
+      
+      // Show confirmation
+      form.innerHTML = '<div style="text-align:center;padding:40px 0;"><div style="font-size:2.5rem;color:#22a06b;margin-bottom:16px;">&#10003;</div><h3 style="color:#fff;font-size:1.2rem;margin-bottom:8px;">Request Submitted!</h3><p style="color:#888;">We\'ll get back to you within 48 hours. For emergencies, call (912) 373-8717.</p></div>';
+    }
+  </script>
+</body>
+</html>
